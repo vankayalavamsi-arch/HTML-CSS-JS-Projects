@@ -1,0 +1,551 @@
+[
+  {
+    "id": 1,
+    "name": "Advanced Drag & Drop Kanban Board",
+    "path": "Projects/Advanced Drag & Drop Kanban Board/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:34.313Z"
+  },
+  {
+    "id": 2,
+    "name": "Advanced Notes App",
+    "path": "Projects/Advanced Notes App/index.html",
+    "icon": "📋",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-09T17:05:34.429Z"
+  },
+  {
+    "id": 3,
+    "name": "Advanced Password Generator",
+    "path": "Projects/Advanced Password Generator/index.html",
+    "icon": "⚙️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:34.533Z"
+  },
+  {
+    "id": 4,
+    "name": "Advanced To Do List",
+    "path": "Projects/Advanced To Do List/index.html",
+    "icon": "📋",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:34.596Z"
+  },
+  {
+    "id": 5,
+    "name": "AI Chat Interface UI",
+    "path": "Projects/AI Chat Interface UI/index.html",
+    "icon": "💬",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:34.664Z"
+  },
+  {
+    "id": 6,
+    "name": "Amazon Clone",
+    "path": "Projects/Amazon Clone/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:34.767Z"
+  },
+  {
+    "id": 7,
+    "name": "Certificate Generator",
+    "path": "Projects/Certificate Generator/index.html",
+    "icon": "⚙️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:35.541Z"
+  },
+  {
+    "id": 8,
+    "name": "Chess Game",
+    "path": "Projects/Chess Game/index.html",
+    "icon": "🎮",
+    "hasProject": true,
+    "category": "Game",
+    "createdAt": "2026-08-09T17:05:35.655Z"
+  },
+  {
+    "id": 9,
+    "name": "Code Playground (Live Editor)",
+    "path": "Projects/Code Playground (Live Editor)/index.html",
+    "icon": "✏️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:35.770Z"
+  },
+  {
+    "id": 10,
+    "name": "Crypto Dashboard UI",
+    "path": "Projects/Crypto Dashboard UI/index.html",
+    "icon": "📊",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:35.902Z"
+  },
+  {
+    "id": 11,
+    "name": "CSS Animation Playground",
+    "path": "Projects/CSS Animation Playground/index.html",
+    "icon": "🎞️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.001Z"
+  },
+  {
+    "id": 12,
+    "name": "Developer Portfolio Builder",
+    "path": "Projects/Developer Portfolio Builder/index.html",
+    "icon": "👨‍💼",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.109Z"
+  },
+  {
+    "id": 13,
+    "name": "Digital Clock & World Timer",
+    "path": "Projects/Digital Clock & World Timer/index.html",
+    "icon": "⏱️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.222Z"
+  },
+  {
+    "id": 14,
+    "name": "Digital Diary",
+    "path": "Projects/Digital Diary/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.341Z"
+  },
+  {
+    "id": 15,
+    "name": "Drink Water",
+    "path": "Projects/Drink Water/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.486Z"
+  },
+  {
+    "id": 16,
+    "name": "E-commerce Frontend",
+    "path": "Projects/E-commerce Frontend/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.648Z"
+  },
+  {
+    "id": 17,
+    "name": "Expense Tracker",
+    "path": "Projects/Expense Tracker/index.html",
+    "icon": "💰",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.766Z"
+  },
+  {
+    "id": 18,
+    "name": "File Explorer UI",
+    "path": "Projects/File Explorer UI/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.868Z"
+  },
+  {
+    "id": 19,
+    "name": "Finance Dashboard UI",
+    "path": "Projects/Finance Dashboard UI/index.html",
+    "icon": "📊",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:36.989Z"
+  },
+  {
+    "id": 20,
+    "name": "Flappy Bird Clone",
+    "path": "Projects/Flappy Bird Clone/index.html",
+    "icon": "🐦",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-09T17:05:37.124Z"
+  },
+  {
+    "id": 21,
+    "name": "GitHub Profile Viewer",
+    "path": "Projects/GitHub Profile Viewer/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:37.266Z"
+  },
+  {
+    "id": 22,
+    "name": "Habit Tracker",
+    "path": "Projects/Habit Tracker/index.html",
+    "icon": "📊",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:37.386Z"
+  },
+  {
+    "id": 23,
+    "name": "Hulu Webpage Clone",
+    "path": "Projects/Hulu Webpage Clone/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:37.491Z"
+  },
+  {
+    "id": 24,
+    "name": "Interactive Timeline",
+    "path": "Projects/Interactive Timeline/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:37.649Z"
+  },
+  {
+    "id": 25,
+    "name": "Invoice Generator",
+    "path": "Projects/Invoice Generator/index.html",
+    "icon": "⚙️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:37.762Z"
+  },
+  {
+    "id": 26,
+    "name": "Live Weather Dashboard",
+    "path": "Projects/Live Weather Dashboard/index.html",
+    "icon": "🌦️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:37.848Z"
+  },
+  {
+    "id": 27,
+    "name": "Memory Puzzle Game",
+    "path": "Projects/Memory Puzzle Game/index.html",
+    "icon": "🎮",
+    "hasProject": true,
+    "category": "Game",
+    "createdAt": "2026-08-09T17:05:37.944Z"
+  },
+  {
+    "id": 28,
+    "name": "Metro Route Finder (UI)",
+    "path": "Projects/Metro Route Finder (UI)/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:38.043Z"
+  },
+  {
+    "id": 29,
+    "name": "Mini OS",
+    "path": "Projects/Mini OS/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:38.101Z"
+  },
+  {
+    "id": 30,
+    "name": "Morse Code Translator",
+    "path": "Projects/Morse Code Translator/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:39.140Z"
+  },
+  {
+    "id": 31,
+    "name": "Movie App",
+    "path": "Projects/Movie App/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-09T17:05:39.238Z"
+  },
+  {
+    "id": 32,
+    "name": "Movie Explorer",
+    "path": "Projects/Movie Explorer/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:39.387Z"
+  },
+  {
+    "id": 33,
+    "name": "Music Visualizer",
+    "path": "Projects/Music Visualizer/index.html",
+    "icon": "🎵",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:39.486Z"
+  },
+  {
+    "id": 34,
+    "name": "Netflix Clone",
+    "path": "Projects/Netflix Clone/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:39.579Z"
+  },
+  {
+    "id": 35,
+    "name": "Online Poll System",
+    "path": "Projects/Online Poll System/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:39.791Z"
+  },
+  {
+    "id": 36,
+    "name": "Pixel Art Editor",
+    "path": "Projects/Pixel Art Editor/index.html",
+    "icon": "✏️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:39.892Z"
+  },
+  {
+    "id": 37,
+    "name": "Planet Explorer",
+    "path": "Projects/Planet Explorer/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.011Z"
+  },
+  {
+    "id": 38,
+    "name": "Pokedex",
+    "path": "Projects/Pokedex/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.124Z"
+  },
+  {
+    "id": 39,
+    "name": "Portfolio Builder",
+    "path": "Projects/Portfolio Builder/index.html",
+    "icon": "👨‍💼",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.267Z"
+  },
+  {
+    "id": 40,
+    "name": "Productivity Dashboard (Pomodoro + Todo)",
+    "path": "Projects/Productivity Dashboard (Pomodoro + Todo)/index.html",
+    "icon": "✅",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.425Z"
+  },
+  {
+    "id": 41,
+    "name": "QR Code Generator",
+    "path": "Projects/QR Code Generator/index.html",
+    "icon": "⚙️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.512Z"
+  },
+  {
+    "id": 42,
+    "name": "Quiz App",
+    "path": "Projects/Quiz App/index.html",
+    "icon": "❓",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-09T17:05:40.560Z"
+  },
+  {
+    "id": 43,
+    "name": "Recipe Finde",
+    "path": "Projects/Recipe Finde/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.652Z"
+  },
+  {
+    "id": 44,
+    "name": "Resume Builder",
+    "path": "Projects/Resume Builder/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.680Z"
+  },
+  {
+    "id": 45,
+    "name": "Smart Calculator",
+    "path": "Projects/Smart Calculator/index.html",
+    "icon": "🧮",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.709Z"
+  },
+  {
+    "id": 46,
+    "name": "Smart Home Dashboard",
+    "path": "Projects/Smart Home Dashboard/index.html",
+    "icon": "📊",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.733Z"
+  },
+  {
+    "id": 47,
+    "name": "Snake Game",
+    "path": "Projects/Snake Game/index.html",
+    "icon": "🎮",
+    "hasProject": true,
+    "category": "Game",
+    "createdAt": "2026-08-09T17:05:40.763Z"
+  },
+  {
+    "id": 48,
+    "name": "Solar System Simulation",
+    "path": "Projects/Solar System Simulation/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.788Z"
+  },
+  {
+    "id": 49,
+    "name": "Space Mission Dashboard",
+    "path": "Projects/Space Mission Dashboard/index.html",
+    "icon": "📊",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.869Z"
+  },
+  {
+    "id": 50,
+    "name": "Space Shooter",
+    "path": "Projects/Space Shooter/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.895Z"
+  },
+  {
+    "id": 51,
+    "name": "Stock Dashboard UI",
+    "path": "Projects/Stock Dashboard UI/index.html",
+    "icon": "📊",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.928Z"
+  },
+  {
+    "id": 52,
+    "name": "Stopwatch & Countdown Timer",
+    "path": "Projects/Stopwatch & Countdown Timer/index.html",
+    "icon": "⏱️",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.955Z"
+  },
+  {
+    "id": 53,
+    "name": "Student Management System",
+    "path": "Projects/Student Management System/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:40.981Z"
+  },
+  {
+    "id": 54,
+    "name": "Sudoku Solver & Player",
+    "path": "Projects/Sudoku Solver & Player/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:41.010Z"
+  },
+  {
+    "id": 55,
+    "name": "Typing Race",
+    "path": "Projects/Typing Race/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:41.038Z"
+  },
+  {
+    "id": 56,
+    "name": "Virtual Aquarium",
+    "path": "Projects/Virtual Aquarium/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:41.065Z"
+  },
+  {
+    "id": 57,
+    "name": "Virtual Keyboard",
+    "path": "Projects/Virtual Keyboard/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:41.091Z"
+  },
+  {
+    "id": 58,
+    "name": "Voice Recording",
+    "path": "Projects/Voice Recording/index.html",
+    "icon": "📁",
+    "hasProject": true,
+    "category": "Tool",
+    "createdAt": "2026-08-09T17:05:41.116Z"
+  },
+  {
+    "id": 59,
+    "name": "Weather App",
+    "path": "Projects/Weather App/index.html",
+    "icon": "🌦️",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-10T10:27:46.319Z"
+  },
+  {
+    "id": 60,
+    "name": "Weather App (No API Key Required)",
+    "path": "Projects/Weather App (No API Key Required)/index.html",
+    "icon": "🌦️",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-09T17:05:41.171Z"
+  },
+  {
+    "id": 61,
+    "name": "Whiteboard Drawing App",
+    "path": "Projects/Whiteboard Drawing App/index.html",
+    "icon": "✏️",
+    "hasProject": true,
+    "category": "App",
+    "createdAt": "2026-08-09T17:05:41.197Z"
+  }
+]

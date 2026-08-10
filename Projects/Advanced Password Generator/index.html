@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>PassGen</h2>
+            <button class="copy-btn" style="padding: 8px 12px; border-radius: 8px;" onclick="toggleDark()">🌙</button>
+        </div>
+
+        <div class="output-box">
+            <input type="text" id="password" disabled value="Click Generate">
+            <button class="copy-btn" onclick="copyPwd()">Copy</button>
+        </div>
+
+        <div class="strength-bar">
+            <div id="strength-fill"></div>
+        </div>
+
+        <div class="option-group">
+            <label>Length: <span id="len-val">16</span></label>
+            <input type="range" id="length" min="4" max="64" value="16" oninput="document.getElementById('len-val').innerText=this.value">
+        </div>
+
+        <div class="checkboxes">
+            <label><input type="checkbox" id="upper" checked> Uppercase</label>
+            <label><input type="checkbox" id="lower" checked> Lowercase</label>
+            <label><input type="checkbox" id="numbers" checked> Numbers</label>
+            <label><input type="checkbox" id="symbols" checked> Symbols</label>
+        </div>
+
+        <button class="generate" onclick="generatePwd()">Generate Password</button>
+
+        <div class="history">
+            <h4>Recent</h4>
+            <div id="history-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

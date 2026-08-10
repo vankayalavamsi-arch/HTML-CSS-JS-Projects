@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Notes</h1>
+            <button class="btn btn-primary" onclick="openModal()">+ New Note</button>
+            <button class="btn btn-secondary" onclick="toggleDark()">🌙</button>
+        </div>
+        
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search notes..." oninput="renderNotes()">
+            <select id="filterCat" onchange="renderNotes()">
+                <option value="all">All Categories</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Ideas">Ideas</option>
+                <option value="Tasks">Tasks</option>
+            </select>
+        </div>
+        
+        <div class="grid" id="notesGrid"></div>
+    </div>
+
+    <div class="modal" id="noteModal">
+        <div class="modal-content">
+            <input type="text" id="noteTitle" placeholder="Title">
+            <textarea id="noteBody" placeholder="Write your note here..."></textarea>
+            <select id="noteCat">
+                <option value="Personal">Personal</option>
+                <option value="Work" selected>Work</option>
+                <option value="Ideas">Ideas</option>
+                <option value="Tasks">Tasks</option>
+            </select>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="saveNote()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

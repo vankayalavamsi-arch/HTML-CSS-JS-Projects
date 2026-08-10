@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Tasks</h2>
+            <button class="toggle" onclick="toggleDark()">🌙</button>
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Add a new task..." onkeypress="if(event.key==='Enter') addTask()">
+            <button class="add" onclick="addTask()">Add</button>
+        </div>
+
+        <div class="filters">
+            <button class="active" onclick="setFilter('all', this)">All</button>
+            <button onclick="setFilter('active', this)">Active</button>
+            <button onclick="setFilter('done', this)">Done</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

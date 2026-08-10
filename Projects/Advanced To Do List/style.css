@@ -1,0 +1,132 @@
+:root {
+    --bg: #f0f2f5;
+    --card: #fff;
+    --text: #000;
+    --border: #ddd;
+    --primary: #00b894;
+    --hover: #00a381;
+}
+
+.dark {
+    --bg: #181818;
+    --card: #252525;
+    --text: #fff;
+    --border: #333;
+    --primary: #55efc4;
+    --hover: #00b894;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.toggle {
+    background: none;
+    border: 2px solid var(--border);
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    font-size: 16px;
+}
+
+button.add {
+    padding: 10px 20px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 5px 15px;
+    border: 2px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+li.done span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+}

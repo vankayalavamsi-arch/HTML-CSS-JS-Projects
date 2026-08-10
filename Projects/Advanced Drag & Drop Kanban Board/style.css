@@ -1,0 +1,140 @@
+:root {
+    --bg: #f0f2f5;
+    --card: #fff;
+    --text: #000;
+    --border: #ddd;
+    --col-bg: #e4e6eb;
+    --red: #ff7675;
+    --blue: #74b9ff;
+    --green: #55efc4;
+}
+
+.dark {
+    --bg: #181818;
+    --card: #252525;
+    --text: #fff;
+    --border: #333;
+    --col-bg: #222;
+    --red: #d63031;
+    --blue: #0984e3;
+    --green: #00b894;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.header {
+    padding: 20px;
+    background: var(--card);
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    background: var(--border);
+    color: var(--text);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.board {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+    overflow-x: auto;
+}
+
+.column {
+    background: var(--col-bg);
+    width: 300px;
+    min-width: 300px;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 100px);
+}
+
+.col-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tasks {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasks.over {
+    border: 2px dashed var(--text);
+    border-radius: 10px;
+}
+
+.task {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: grab;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid var(--blue);
+    position: relative;
+}
+
+.task:active {
+    cursor: grabbing;
+    opacity: 0.5;
+}
+
+.del-task {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text);
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: var(--card);
+    color: var(--text);
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: var(--text);
+    opacity: 0.5;
+}

@@ -1,0 +1,116 @@
+:root {
+    --bg: #2d3436;
+    --card: #636e72;
+    --text: #fff;
+    --accent: #00b894;
+    --mistake: #d63031;
+}
+
+.dark {
+    --bg: #dfe6e9;
+    --card: #fff;
+    --text: #000;
+    --mistake: #ff7675;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.stats span {
+    color: var(--accent);
+}
+
+.text-box {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    width: 100%;
+    min-height: 120px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.correct {
+    color: var(--text);
+}
+
+.wrong {
+    color: var(--mistake);
+    background: rgba(214, 48, 49, 0.2);
+    border-radius: 3px;
+    text-decoration: underline;
+}
+
+.current {
+    border-bottom: 2px solid var(--accent);
+}
+
+input {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--card);
+    background: var(--card);
+    color: var(--text);
+    outline: none;
+    font-family: inherit;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: var(--accent);
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 30px;
+    background: var(--card);
+    border: none;
+    color: var(--text);
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}

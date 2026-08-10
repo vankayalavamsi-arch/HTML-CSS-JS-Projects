@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="editor">
+        <h2>Builder</h2>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" id="name" value="Jane Doe" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" id="title" value="Full Stack Developer" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>About</label>
+            <textarea id="about" oninput="update()">I build amazing web applications.</textarea>
+        </div>
+        <div class="form-group">
+            <label>Skills (comma sep)</label>
+            <input type="text" id="skills" value="HTML,CSS,JS,React,Node" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>Project 1 Name</label>
+            <input type="text" id="p1n" value="E-commerce App" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>Project 1 Desc</label>
+            <textarea id="p1d" oninput="update()">A full stack store.</textarea>
+        </div>
+        <button onclick="exportHTML()">Export HTML</button>
+        <button style="background:var(--border);color:var(--text)" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="preview" id="preview"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

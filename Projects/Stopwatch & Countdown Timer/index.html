@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer & Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <button class="btn-dark" onclick="toggleDark()">🌙</button>
+        </div>
+        
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('stopwatch', this)">Stopwatch</button>
+            <button class="tab" onclick="switchTab('countdown', this)">Countdown</button>
+        </div>
+
+        <div id="stopwatch-panel">
+            <div id="sw-display">00:00:00.00</div>
+            <div class="controls">
+                <button class="primary" id="sw-start" onclick="swStart()">Start</button>
+                <button onclick="swLap()">Lap</button>
+                <button onclick="swReset()">Reset</button>
+            </div>
+            <div class="laps" id="laps"></div>
+        </div>
+
+        <div id="countdown-panel" style="display: none;">
+            <div class="countdown-input">
+                <input type="number" id="cd-hr" placeholder="Hr" min="0" max="99" value="0">
+                <input type="number" id="cd-min" placeholder="Min" min="0" max="59" value="5">
+                <input type="number" id="cd-sec" placeholder="Sec" min="0" max="59" value="0">
+            </div>
+            <div id="cd-display">00:05:00</div>
+            <div class="controls">
+                <button class="primary" id="cd-start" onclick="cdStart()">Start</button>
+                <button onclick="cdReset()">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

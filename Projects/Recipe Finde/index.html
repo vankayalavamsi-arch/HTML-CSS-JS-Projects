@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <input type="text" id="search" placeholder="Search for a meal (e.g. Chicken)..." onkeypress="if(event.key==='Enter')getMeals()">
+        <button onclick="getMeals()">Search</button>
+        <button class="dark-toggle-btn" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="grid" id="grid"></div>
+    
+    <button class="close" id="closeBtn" onclick="closeModal()">×</button>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

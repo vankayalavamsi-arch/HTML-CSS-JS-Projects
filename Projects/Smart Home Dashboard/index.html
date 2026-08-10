@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Smart Home</h1>
+        <button class="btn-dark" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab active" onclick="setRoom('living', this)">Living Room</button>
+        <button class="tab" onclick="setRoom('bed', this)">Bedroom</button>
+        <button class="tab" onclick="setRoom('kitch', this)">Kitchen</button>
+    </div>
+    
+    <div class="dashboard">
+        <div class="devices" id="devices"></div>
+        <div class="stats">
+            <h3>Energy Usage</h3>
+            <div class="donut"></div>
+            <div class="stat-row"><span>Living Room</span><strong>40%</strong></div>
+            <div class="stat-row"><span>Bedroom</span><strong>35%</strong></div>
+            <div class="stat-row"><span>Kitchen</span><strong>25%</strong></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

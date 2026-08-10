@@ -1,0 +1,142 @@
+:root {
+    --bg: #74b9ff;
+    --weather-bg: #74b9ff;
+    --card: rgba(255, 255, 255, 0.85);
+    --text: #2d3436;
+}
+
+.dark {
+    --bg: #1e1e1e;
+    --card: rgba(255, 255, 255, 0.1);
+    --text: #dfe6e9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    /* Use the custom property for the base background */
+    background: var(--weather-bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s, color 0.3s;
+    overflow: hidden;
+}
+
+/* Dark mode overlay to dim the weather background */
+.dark {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), var(--weather-bg);
+}
+
+.container {
+    text-align: center;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.temp {
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.desc {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.details {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    background: var(--card);
+    padding: 20px 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item h4 {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--card);
+    color: var(--text);
+    backdrop-filter: blur(5px);
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.forecast {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.day {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 60px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.day:hover {
+    transform: translateY(-5px);
+}
+
+.day h4 {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+.day p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}

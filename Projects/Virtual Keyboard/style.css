@@ -1,0 +1,134 @@
+:root {
+    --bg: #dfe6e9;
+    --card: #fff;
+    --text: #000;
+    --key: #f5f6fa;
+    --active: #0984e3;
+    --border: #b2bec3;
+}
+
+.dark {
+    --bg: #2d3436;
+    --card: #636e72;
+    --text: #fff;
+    --key: #444;
+    --active: #74b9ff;
+    --border: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, color 0.3s;
+    padding: 20px;
+}
+
+.top-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.btn-dark {
+    padding: 10px 15px;
+    background: var(--card);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text);
+    transition: 0.2s;
+}
+
+.btn-dark:hover {
+    background: var(--key);
+}
+
+textarea {
+    width: 100%;
+    max-width: 800px;
+    height: 120px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    border: 2px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    resize: none;
+    margin-bottom: 20px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--active);
+}
+
+.keyboard {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.key {
+    height: 50px;
+    min-width: 40px;
+    padding: 0 10px;
+    background: var(--key);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--text);
+    transition: 0.1s;
+    box-shadow: 0 4px 0 var(--border);
+    user-select: none;
+}
+
+.key:active,
+.active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 var(--border);
+    background: var(--active);
+    color: #fff;
+}
+
+.wide {
+    min-width: 80px;
+}
+
+.wider {
+    min-width: 120px;
+}
+
+.space {
+    flex: 1;
+    max-width: 400px;
+}

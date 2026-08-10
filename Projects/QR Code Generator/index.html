@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <!-- Lightweight QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>QR Generator</h2>
+            <button style="width:auto; padding: 8px 12px; background: var(--input-bg); color: var(--text);" onclick="toggleDark()">🌙</button>
+        </div>
+
+        <textarea id="text" placeholder="Enter text or URL..." oninput="generateQR()">https://github.com</textarea>
+
+        <div class="settings">
+            <div>
+                <label>QR Color</label>
+                <input type="color" id="color" value="#000000" oninput="generateQR()">
+            </div>
+            <div>
+                <label>Size (px)</label>
+                <input type="number" id="size" value="200" min="100" max="400" oninput="generateQR()">
+            </div>
+        </div>
+
+        <div class="qr-box">
+            <div id="qrcode"></div>
+        </div>
+
+        <button onclick="downloadQR()">Download PNG</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

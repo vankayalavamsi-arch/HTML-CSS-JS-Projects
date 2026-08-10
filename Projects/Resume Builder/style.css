@@ -1,0 +1,156 @@
+:root {
+    --bg: #f0f2f5;
+    --card: #fff;
+    --text: #000;
+    --accent: #6c5ce7;
+    --border: #ddd;
+}
+
+.dark {
+    --bg: #181818;
+    --card: #252525;
+    --text: #fff;
+    --accent: #a29bfe;
+    --border: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    height: 100vh;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.form-side {
+    width: 40%;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 2px solid var(--border);
+}
+
+.preview-side {
+    width: 60%;
+    padding: 40px;
+    background: var(--card);
+    color: var(--text);
+    overflow-y: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    background: var(--accent);
+}
+
+.btn-dark {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.btn-print {
+    background: #00b894;
+}
+
+.contact-info {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.preserve-whitespace {
+    white-space: pre-wrap;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 5px;
+}
+
+@media print {
+    body {
+        display: block;
+        background: #fff;
+        color: #000;
+    }
+
+    .form-side {
+        display: none;
+    }
+
+    .preview-side {
+        width: 100%;
+        padding: 0;
+        background: #fff;
+        color: #000;
+    }
+
+    h1 {
+        border-bottom-color: #000;
+    }
+
+    .contact-info {
+        color: #555;
+    }
+}

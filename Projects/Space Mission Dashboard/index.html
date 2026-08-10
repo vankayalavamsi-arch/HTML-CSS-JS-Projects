@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Mission Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="panel">
+        <h2>Mission Crew</h2>
+        <div class="crew">
+            <div class="avatar">CM</div>
+            <div>
+                <div>Commander</div>
+                <div class="crew-sub">Neil A.</div>
+            </div>
+        </div>
+        <div class="crew">
+            <div class="avatar pilot-avatar">PL</div>
+            <div>
+                <div>Pilot</div>
+                <div class="crew-sub">Buzz K.</div>
+            </div>
+        </div>
+        <div class="crew">
+            <div class="avatar engineer-avatar">SE</div>
+            <div>
+                <div>Engineer</div>
+                <div class="crew-sub">Sally R.</div>
+            </div>
+        </div>
+        
+        <h2 class="mt-auto">System Health</h2>
+        <div class="status">
+            <div class="dot" style="background:var(--accent)"></div>Comms: Online
+        </div>
+        <div class="status">
+            <div class="dot" style="background:var(--accent)"></div>Nav: Online
+        </div>
+        <div class="status">
+            <div class="dot" style="background:var(--warn)"></div>Shield: 85%
+        </div>
+    </div>
+
+    <div class="panel center">
+        <h2>Mission Elapsed Time</h2>
+        <div id="clock">00:00:00:00</div>
+        <div class="gauges-container">
+            <div class="gauge">
+                <div class="gauge-header">
+                    <span>FUEL</span>
+                    <span id="fuelP">100%</span>
+                </div>
+                <div class="gauge-bar">
+                    <div class="gauge-fill" id="fuel" style="width:100%;background:var(--accent)"></div>
+                </div>
+            </div>
+            <div class="gauge">
+                <div class="gauge-header">
+                    <span>ALTITUDE (KM)</span>
+                    <span id="altP">0</span>
+                </div>
+                <div class="gauge-bar">
+                    <div class="gauge-fill" id="alt" style="width:0%;background:var(--warn)"></div>
+                </div>
+            </div>
+            <div class="gauge">
+                <div class="gauge-header">
+                    <span>VELOCITY (KM/S)</span>
+                    <span id="velP">0</span>
+                </div>
+                <div class="gauge-bar">
+                    <div class="gauge-fill" id="vel" style="width:0%;background:#3498db"></div>
+                </div>
+            </div>
+        </div>
+        <button class="btn" id="launchBtn" onclick="launch()">Launch</button>
+    </div>
+
+    <div class="panel">
+        <h2>Objectives</h2>
+        <div class="status">
+            <div class="dot" style="background:var(--accent)"></div>Reach Orbit
+        </div>
+        <div class="status">
+            <div class="dot" style="background:#333"></div>Deploy Payload
+        </div>
+        <div class="status">
+            <div class="dot" style="background:#333"></div>Landing Sequence
+        </div>
+        
+        <h2 class="mt-30">Telemetry</h2>
+        <div class="telemetry">
+            <div>TEMP EXT: <span id="temp" class="telemetry-val">21°C</span></div>
+            <div>G-FORCE: <span id="gforce" class="telemetry-val">1.0G</span></div>
+            <div>O2 LEVELS: <span id="o2" class="telemetry-val">98%</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

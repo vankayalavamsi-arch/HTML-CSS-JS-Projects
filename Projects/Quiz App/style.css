@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+ 
+body {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    #5532de 0%,
+    #7040e8 25%,
+    #a15edc 60%,
+    #f5b3c9 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: #fbfbfc;
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 90px;
+  background: black;
+  margin: 8px auto 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Btnclass {
+  width: 300px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    #9e64ef 0%,
+    #955ced 15%,
+    #8956eb 35%,
+    #7f55e8 55%,
+    #7555e8 75%,
+    #6f5ae5 100%
+  );
+  color: white;
+  transition: all 0.25s ease;
+}
+
+#StartBtn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 25px rgba(115, 86, 232, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+#NextBtn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 25px rgba(115, 86, 232, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+#RestartBtn:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 25px rgba(115, 86, 232, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+}
+
+#Question_text {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: center;
+  padding: 10px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  border: 2px solid #2e2436;
+}
+
+li:hover {
+  background: linear-gradient(90deg, #f7ffd9 0%, #eefcbf 50%, #e8f9b5 100%);
+
+  border: 2px solid #b6dd14;
+}
+
+.li_lock {
+  background: linear-gradient(90deg, #f7ffd9 0%, #eefcbf 50%, #e8f9b5 100%);
+
+  border: 2px solid #b6dd14;
+}
+
+#Result_container p:first-child {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#Score {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#RestartBtn {
+    margin-top: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Stocks</h1>
+        <button class="btn-dark" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="tabs">
+        <button class="tab active" onclick="filter('all', this)">All</button>
+        <button class="tab" onclick="filter('gainers', this)">Gainers</button>
+        <button class="tab" onclick="filter('losers', this)">Losers</button>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Price</th>
+                <th>Change</th>
+                <th>Volume</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

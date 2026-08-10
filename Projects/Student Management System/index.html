@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Students</h1>
+            <button class="btn-dark" onclick="toggleDark()">🌙</button>
+        </div>
+        
+        <div class="form-card">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="number" id="age" placeholder="Age">
+            <select id="course">
+                <option>Computer Science</option>
+                <option>Business</option>
+                <option>Design</option>
+            </select>
+            <input type="email" id="email" placeholder="Email">
+            <div class="actions">
+                <button id="subBtn" onclick="submitStudent()">Add Student</button>
+            </div>
+        </div>
+        
+        <input type="text" id="search" class="search-input" placeholder="Search by name or course..." oninput="renderTable()">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Course</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

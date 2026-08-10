@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Aquarium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="aquarium" id="tank">
+        <div class="sand"></div>
+        
+        <div id="details" class="details-popup">
+            <h3 id="dName"></h3>
+            <p id="dAge"></p>
+        </div>
+        
+        <div class="controls">
+            <button onclick="addFish()">+ Add Fish</button>
+            <button id="timeBtn" onclick="toggleTime(event)">🌙 Night</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

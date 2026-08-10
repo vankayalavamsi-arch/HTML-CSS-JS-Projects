@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiteboard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="toolbar">
+        <input type="color" id="color" value="#000000" title="Brush Color">
+        <input type="range" id="size" min="1" max="50" value="5" title="Brush Size">
+        <button class="eraser" id="eraserBtn" onclick="toggleEraser()">Eraser</button>
+        <button onclick="clearCanvas()">Clear</button>
+        <button onclick="downloadCanvas()">Download</button>
+        <button class="btn-dark" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

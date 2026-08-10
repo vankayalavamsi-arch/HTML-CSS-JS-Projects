@@ -1,0 +1,160 @@
+:root {
+    --bg: #dfe6e9;
+    --card: #fff;
+    --text: #000;
+    --border: #b2bec3;
+    --mistake: #ff7675;
+    --accent: #0984e3;
+}
+
+.dark {
+    --bg: #2d3436;
+    --card: #636e72;
+    --text: #fff;
+    --border: #444;
+    --mistake: #d63031;
+    --accent: #74b9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    border: 3px solid var(--text);
+    width: 360px;
+    height: 360px;
+    background: var(--text);
+    margin: 0 auto 20px;
+}
+
+.cell {
+    background: var(--card);
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.cell:hover {
+    background: var(--border);
+}
+
+.cell.selected {
+    background: var(--accent);
+    color: #fff;
+}
+
+.cell.locked {
+    color: var(--accent);
+    cursor: default;
+}
+
+.cell.locked:hover {
+    background: var(--card);
+}
+
+.cell.locked.selected {
+    background: var(--accent);
+    color: #fff;
+}
+
+.cell.mistake {
+    background: var(--mistake);
+    color: #fff;
+}
+
+/* 3x3 Box Borders */
+.cell:nth-child(3n) {
+    border-right: 2px solid var(--text);
+}
+
+.cell:nth-child(n+19):nth-child(-n+27) {
+    border-bottom: 2px solid var(--text);
+}
+
+.cell:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 2px solid var(--text);
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+    max-width: 360px;
+    margin: 0 auto 20px;
+}
+
+.num {
+    padding: 15px 0;
+    background: var(--card);
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text);
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.num:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
+
+.btn-solve {
+    background: var(--accent);
+}
+
+.btn-secondary {
+    background: #636e72;
+}

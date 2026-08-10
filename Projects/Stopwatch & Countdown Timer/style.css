@@ -1,0 +1,173 @@
+:root {
+    --bg: #ffeaa7;
+    --card: #fff;
+    --text: #2d3436;
+    --accent: #e17055;
+    --btn: #dfe6e9;
+}
+
+.dark {
+    --bg: #2d3436;
+    --card: #636e72;
+    --text: #ffeaa7;
+    --accent: #fab1a0;
+    --btn: #4a5568;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.btn-dark {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--btn);
+    color: var(--text);
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--btn);
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.tab.active {
+    opacity: 1;
+    border-bottom: 3px solid var(--accent);
+    margin-bottom: -2px; /* Prevents border thickness from shifting layout */
+}
+
+#display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: monospace;
+}
+
+#sw-display, #cd-display {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: monospace;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--btn);
+    color: var(--text);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.primary {
+    background: var(--accent);
+    color: #fff;
+}
+
+.primary:hover {
+    opacity: 0.9;
+}
+
+.countdown-input {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid var(--btn);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.laps {
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.lap-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid var(--btn);
+    font-family: monospace;
+}

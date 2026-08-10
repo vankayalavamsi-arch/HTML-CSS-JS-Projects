@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Courier New', monospace;
+}
+
+canvas {
+    background: #0a0a0a;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+    border: 2px solid #333;
+}
+
+.hud {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.health-bar {
+    width: 200px;
+    height: 15px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.health-fill {
+    height: 100%;
+    background: #00ff88;
+    width: 100%;
+    transition: width 0.2s, background 0.2s;
+}
+
+.instructions {
+    margin-top: 10px;
+    opacity: 0.5;
+    font-size: 14px;
+}

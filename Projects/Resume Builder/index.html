@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-side">
+        <h2>Build Resume</h2>
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="email" placeholder="john@mail.com" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>Phone</label>
+            <input type="text" id="phone" placeholder="+123 456 789" oninput="update()">
+        </div>
+        <div class="form-group">
+            <label>Professional Summary</label>
+            <textarea id="summary" placeholder="Brief overview..." oninput="update()"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Experience</label>
+            <textarea id="exp" placeholder="Company - Role - Dates - Details" oninput="update()"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Education</label>
+            <textarea id="edu" placeholder="Degree - University - Year" oninput="update()"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Skills (comma separated)</label>
+            <input type="text" id="skills" placeholder="HTML, CSS, JS" oninput="update()">
+        </div>
+        <div class="actions">
+            <button class="btn-dark" onclick="toggleDark()">🌙</button>
+            <button class="btn-print" onclick="window.print()">Download / Print</button>
+        </div>
+    </div>
+    
+    <div class="preview-side" id="preview">
+        <h1 id="p-name">John Doe</h1>
+        <p id="p-contact" class="contact-info">john@mail.com | +123 456 789</p>
+        <div id="p-summary">
+            <h2>Summary</h2>
+            <p>Highly motivated professional...</p>
+        </div>
+        <div id="p-exp">
+            <h2>Experience</h2>
+            <p>Company - Role</p>
+        </div>
+        <div id="p-edu">
+            <h2>Education</h2>
+            <p>Degree - University</p>
+        </div>
+        <div id="p-skills">
+            <h2>Skills</h2>
+            <p>HTML, CSS, JS</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

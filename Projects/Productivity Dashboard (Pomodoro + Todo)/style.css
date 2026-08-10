@@ -1,0 +1,119 @@
+:root {
+    --bg: #dfe6e9;
+    --card: #fff;
+    --text: #2d3436;
+    --red: #d63031;
+    --green: #00b894;
+    --blue: #0984e3;
+}
+
+.dark {
+    --bg: #2d3436;
+    --card: #444;
+    --text: #fff;
+    --red: #ff7675;
+    --green: #55efc4;
+    --blue: #74b9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    transition: 0.3s;
+}
+
+.timer-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--card);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-side {
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.svg-circle {
+    width: 250px;
+    height: 250px;
+    transform: rotate(-90deg);
+}
+
+.bg {
+    fill: none;
+    stroke: var(--bg);
+    stroke-width: 10;
+}
+
+.progress {
+    fill: none;
+    stroke: var(--red);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.time-text {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: -160px;
+    margin-bottom: 100px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid var(--bg);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+}
+
+.task {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="timer-side">
+        <h1>Pomodoro</h1>
+        <svg class="svg-circle">
+            <circle class="bg" cx="125" cy="125" r="110" />
+            <circle class="progress" id="prog" cx="125" cy="125" r="110" stroke-dasharray="691.15" stroke-dashoffset="0" />
+        </svg>
+        <div class="time-text" id="time">25:00</div>
+        <div class="controls">
+            <button style="background:var(--red);color:#fff" onclick="startTimer()">Start</button>
+            <button style="background:var(--bg);color:var(--text)" onclick="resetTimer()">Reset</button>
+            <button style="background:var(--bg);color:var(--text)" onclick="toggleDark()">🌙</button>
+        </div>
+    </div>
+    
+    <div class="todo-side">
+        <h2>Quick Tasks</h2>
+        <div class="controls" style="margin-bottom:20px;margin-top:20px;">
+            <input type="text" id="taskIn" placeholder="Add task..." onkeypress="if(event.key==='Enter')addTask()">
+            <button style="background:var(--blue);color:#fff" onclick="addTask()">Add</button>
+        </div>
+        <div id="tasks"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

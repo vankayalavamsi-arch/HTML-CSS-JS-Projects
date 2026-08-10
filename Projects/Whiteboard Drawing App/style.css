@@ -1,0 +1,98 @@
+:root {
+    --bg: #fff;
+    --toolbar: #f5f6fa;
+    --text: #000;
+    --border: #ddd;
+    --accent: #0984e3;
+}
+
+.dark {
+    --bg: #121212;
+    --toolbar: #252525;
+    --text: #fff;
+    --border: #333;
+    --accent: #74b9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.3s, color 0.3s;
+    overflow: hidden;
+}
+
+.toolbar {
+    background: var(--toolbar);
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.toolbar input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--border);
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.toolbar input[type="range"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.eraser {
+    background: var(--border);
+    color: var(--text);
+}
+
+.btn-dark {
+    background: var(--border);
+    color: var(--text);
+}
+
+canvas {
+    flex: 1;
+    cursor: crosshair;
+    display: block;
+    background: var(--bg); /* Fallback background */
+}
+
+/* Visual feedback for eraser mode */
+canvas.eraser-active {
+    cursor: cell;
+}

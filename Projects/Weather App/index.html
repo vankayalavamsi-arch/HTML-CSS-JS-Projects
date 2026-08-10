@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Weather App</h1>
+            <p>Get real-time weather information for any city</p>
+        </header>
+
+        <div class="search-section">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Enter city name..." 
+                autocomplete="off"
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div class="weather-container">
+            <div id="currentWeather" class="current-weather">
+                <!-- Current weather will be inserted here -->
+            </div>
+        </div>
+
+        <div class="forecast-section">
+            <h2>5-Day Forecast</h2>
+            <div id="forecast" class="forecast-grid">
+                <!-- Forecast cards will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

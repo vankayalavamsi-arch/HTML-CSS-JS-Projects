@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    background-color: black;
+}
+
+.header {
+    width: 100%;
+    height: 94vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.logoimg {
+    width: 10%;
+    margin-right: 25vw;
+}
+
+nav button {
+    background-color: red;
+    color: aliceblue;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+nav .btn1 {
+    background-color: transparent;
+    border: 1px solid white;
+
+
+}
+
+nav .btn1 img {
+    width: 10px;
+
+}
+
+nav .btn2 {
+    border: none;
+}
+
+@media screen and (max-width:550px) {
+
+    .logoimg {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    nav button {
+        font-size: 2.5vw;
+        margin-right: 5px;
+    }
+}
+
+.topcontent {
+    color: white;
+    text-align: center;
+    margin-top: 10%
+}
+
+.topcontent h1 {
+    font-size: 50px;
+}
+
+.topcontent .para1 {
+    font-size: 30px;
+    margin-top: 1%;
+}
+
+.topcontent .para2 {
+    font-size: 22px;
+    margin-top: 1%;
+}
+
+.topcontent .form {
+    margin-top: 2%;
+
+
+}
+
+.form input {
+    width: 23%;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+}
+
+.form ::placeholder {
+    color: rgb(125, 122, 122);
+    font-size: 15px;
+}
+
+.form button {
+    background-color: red;
+    color: aliceblue;
+    padding: 10px 20px 17px 20px;
+    font-size: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hor-line {
+    position: absolute;
+    background-color: rgb(60, 58, 58);
+    color: black;
+    border: none;
+    height: 8px;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:550px) {
+    .topcontent h1 {
+        font-size: 32px;
+    }
+
+    .topcontent .para1 {
+        font-size: 18px;
+        margin-top: 17px;
+    }
+
+    .topcontent .para2 {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .form input {
+        width: 70%;
+    }
+
+    .form button {
+        width: 50%;
+        font-size: 15px;
+    }
+}
+
+.second-content {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.second-content h1 {
+    font-size: 60px;
+
+}
+
+.second-content p {
+    font-size: 20px;
+}
+
+.second-content img {
+    width: 80%;
+}
+
+@media screen and (max-width:550px) {
+    .second-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .second-content p {
+        margin-top: 20px;
+    }
+
+    .second-content h1 {
+        font-size: 40px;
+        margin-top: 20%;
+    }
+
+    .second-content img {
+        margin-bottom: 10%;
+    }
+}
+
+.third-content {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.third-content h1 {
+    font-size: 60px;
+
+}
+
+.third-content p {
+    font-size: 20px;
+}
+
+.third-content img {
+    width: 80%;
+}
+
+@media screen and (max-width:550px) {
+    .third-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .third-content p {
+        margin-top: 20px;
+    }
+
+    .third-content h1 {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+
+    .third-content img {
+        margin-bottom: 10%;
+    }
+}
+
+.fourth-content {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+
+
+.fourth-content h1 {
+    font-size: 60px;
+
+}
+
+.fourth-content p {
+    font-size: 20px;
+}
+
+.fourth-content img {
+    width: 80%;
+}
+
+@media screen and (max-width:550px) {
+    .fourth-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fourth-content p {
+        margin-top: 20px;
+    }
+
+    .fourth-content h1 {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+
+    .fourth-content img {
+        margin-bottom: 10%;
+    }
+}
+
+.fifth-content {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.fifth-content h1 {
+    font-size: 60px;
+
+}
+
+.fifth-content p {
+    font-size: 20px;
+}
+
+.fifth-content img {
+    width: 80%;
+}
+
+@media screen and (max-width:550px) {
+    .fifth-content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .fifth-content p {
+        margin-top: 20px;
+    }
+
+    .fifth-content h1 {
+        font-size: 30px;
+        margin-top: 20%;
+    }
+
+    .fifth-content img {
+        margin-bottom: 10%;
+    }
+}
+
+.faq {
+    color: aliceblue;
+}
+
+.faq h1 {
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 4vw;
+}
+
+.questions {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.questions div {
+    background-color: rgb(62, 60, 60);
+    margin-top: 10px;
+    width: 70%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.questions div:hover {
+    background-color: rgb(101, 97, 97);
+
+}
+
+.faq-content {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.form1 {
+    margin-top: 1%;
+}
+
+.faq-content p {
+    font-size: 20px;
+}
+
+.form1 input {
+    width: 23%;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+}
+
+.form1 ::placeholder {
+    color: rgb(125, 122, 122);
+    font-size: 15px;
+}
+
+.form1 button {
+    background-color: red;
+    color: aliceblue;
+    padding: 10px 20px 17px 20px;
+    font-size: 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:550px) {
+    .faq-content p {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}
+
+.foot-content {
+    display: flex;
+    flex-direction: colum;
+    justify-content: space-around;
+    margin-top: 10%;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10%;
+
+}
+
+.footer {
+    text-decoration: underline;
+    color: rgb(124, 121, 121);
+
+}
+
+.footer p {
+    margin-top: 10px;
+}
+
+.foot-item {
+    color: aliceblue;
+
+}
+
+.foot-item p {
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.helpcenter {
+
+    text-decoration: underline;
+    color: rgb(124, 121, 121);
+}
+
+.helpcenter p {
+    margin-top: 10px;
+}
+
+.helpcenter-1 p {
+    margin-top: 10px;
+}
+
+.helpcenter-1 {
+
+    text-decoration: underline;
+    color: rgb(124, 121, 121);
+}
+
+.helpcenter-2 p {
+    margin-top: 10px;
+}
+
+.helpcenter-2 {
+
+    text-decoration: underline;
+    color: rgb(124, 121, 121);
+}
+
+@media screen and (max-width:550px) {
+    .foot-content {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <input type="text" id="search" placeholder="Search movies..." onkeypress="if(event.key==='Enter')resetAndSearch()">
+        <button onclick="resetAndSearch()">Search</button>
+        <button style="background:var(--card);color:var(--text)" onclick="toggleDark()">🌙</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div id="loading">Loading more...</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

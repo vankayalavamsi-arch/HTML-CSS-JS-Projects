@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="flex:1;">
+                <h1>INVOICE</h1>
+                <input type="text" id="compName" placeholder="Your Company Name" oninput="updateTotal()">
+                <input type="text" placeholder="Your Address" style="margin-top:10px">
+            </div>
+            <div style="flex:1;">
+                <input type="text" id="clientName" placeholder="Client Name">
+                <input type="text" placeholder="Client Email" style="margin-top:10px">
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="items">
+                <tr>
+                    <td><input type="text" class="desc" placeholder="Item" oninput="updateTotal()"></td>
+                    <td><input type="number" class="qty" value="1" oninput="updateTotal()"></td>
+                    <td><input type="number" class="price" value="0" oninput="updateTotal()"></td>
+                    <td class="row-total">$0.00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button onclick="addItem()" style="background:#00b894">+ Add Item</button>
+        
+        <div class="totals">
+            <p>Subtotal: $<span id="subtotal">0.00</span></p>
+            <p>Tax (10%): $<span id="tax">0.00</span></p>
+            <h2>Total: $<span id="total">0.00</span></h2>
+        </div>
+        
+        <div style="display:flex;gap:10px;">
+            <button onclick="window.print()">Download PDF / Print</button>
+            <button style="background:var(--border);color:var(--text)" onclick="toggleDark()">🌙</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

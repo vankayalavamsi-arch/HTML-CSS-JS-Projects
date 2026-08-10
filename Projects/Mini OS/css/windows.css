@@ -1,0 +1,27 @@
+#windows-container { position: absolute; inset: 0; bottom: 48px; z-index: 10; pointer-events: none; }
+.app-window {
+    position: absolute; background: var(--bg-glass); border: 1px solid var(--border-color);
+    border-radius: 8px; display: flex; flex-direction: column; pointer-events: auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5); overflow: hidden; min-width: 300px; min-height: 200px;
+}
+.app-window.focused { z-index: 999 !important; box-shadow: 0 8px 30px rgba(0,0,0,0.7); }
+.app-window.maximized { top: 0 !important; left: 0 !important; width: 100% !important; height: calc(100vh - 48px) !important; border-radius: 0; }
+
+.win-header { height: 32px; background: rgba(0,0,0,0.2); display: flex; align-items: center; padding: 0 5px 0 10px; flex-shrink: 0; cursor: default; }
+.win-title { flex: 1; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.win-controls { display: flex; gap: 2px; }
+.win-controls button { width: 28px; height: 28px; border: none; background: none; color: var(--text-primary); font-size: 14px; cursor: pointer; border-radius: 3px; }
+.win-controls button:hover { background: var(--hover-bg); }
+.win-controls .close-btn:hover { background: #e81123; }
+
+.win-body { flex: 1; background: var(--bg-primary); overflow: auto; position: relative; }
+
+/* Resize Handles */
+.win-resize { position: absolute; z-index: 2; }
+.win-resize-r { top: 5px; right: -3px; bottom: 5px; width: 6px; cursor: e-resize; }
+.win-resize-b { bottom: -3px; left: 5px; right: 5px; height: 6px; cursor: s-resize; }
+.win-resize-br { bottom: -3px; right: -3px; width: 12px; height: 12px; cursor: se-resize; }
+
+/* Animations */
+@keyframes openWin { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.app-window { animation: openWin 0.15s ease-out; }

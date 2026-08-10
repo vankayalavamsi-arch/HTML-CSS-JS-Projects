@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Morse Code Translator</h1>
+        <p class="subtitle">Type text or Morse code (use spaces between letters, and "/" or " | " between words).</p>
+        
+        <div class="translator-grid">
+            <!-- Text to Morse Section -->
+            <div class="input-section">
+                <label for="text-input">English / Text</label>
+                <textarea id="text-input" placeholder="Enter text here..."></textarea>
+                <button id="to-morse-btn" class="btn">Convert to Morse</button>
+            </div>
+
+            <!-- Morse to Text Section -->
+            <div class="input-section">
+                <label for="morse-input">Morse Code</label>
+                <textarea id="morse-input" placeholder="Enter morse here... (e.g., .... . .-.. .-.. ---)"></textarea>
+                <button id="to-text-btn" class="btn">Convert to Text</button>
+            </div>
+        </div>
+
+        <!-- Audio Playback Section -->
+        <div class="audio-section">
+            <button id="play-morse-btn" class="btn audio-btn">🔊 Play Morse Audio</button>
+            <button id="clear-btn" class="btn clear-btn">Clear All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

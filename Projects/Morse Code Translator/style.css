@@ -1,0 +1,127 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e1e24;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #2b2b36;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4ecca3;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #a0a0b0;
+    margin-bottom: 30px;
+}
+
+.translator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .translator-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ccccdd;
+}
+
+textarea {
+    background-color: #23232e;
+    border: 1px solid #3e3e4e;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace; /* Monospace is better for Morse */
+    resize: vertical;
+    min-height: 150px;
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #4ecca3;
+}
+
+.btn {
+    background-color: #4ecca3;
+    color: #1e1e24;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+    background-color: #3daa87;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.audio-section {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.audio-btn {
+    background-color: #3b82f6;
+    flex: 1;
+}
+
+.audio-btn:hover {
+    background-color: #2563eb;
+}
+
+.clear-btn {
+    background-color: #ef4444;
+    flex: 1;
+}
+
+.clear-btn:hover {
+    background-color: #dc2626;
+}

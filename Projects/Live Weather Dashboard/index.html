@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Search city..." value="London" onkeypress="if(event.key==='Enter') getWeather()">
+            <button onclick="getWeather()">Search</button>
+        </div>
+        <div class="toggle-row">
+            <button onclick="toggleUnit()">Toggle °C / °F</button>
+            <button onclick="toggleDark()" style="margin-left: 10px;">🌙</button>
+        </div>
+        <div id="loading">Loading weather...</div>
+        
+        <div id="weatherDisplay" style="display: none;">
+            <div class="weather-card">
+                <div class="city" id="cityName">London</div>
+                <div class="temp" id="temp">20°C</div>
+                <div class="desc" id="desc">Clear sky</div>
+                <div class="details">
+                    <div class="detail-item">
+                        <h4>Humidity</h4>
+                        <p id="humidity">50%</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Wind</h4>
+                        <p id="wind">5 m/s</p>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast" id="forecast"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniOS</title>
+    <link rel="stylesheet" href="css/boot.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/windows.css">
+    <link rel="stylesheet" href="css/taskbar.css">
+    <link rel="stylesheet" href="css/explorer.css">
+    <link rel="stylesheet" href="css/calendar.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+    <!-- Boot Screen -->
+    <div id="boot-screen">
+        <div class="boot-logo">Mini<span>OS</span></div>
+        <div class="boot-bar"><div class="boot-progress" id="boot-progress"></div></div>
+        <div class="boot-msg" id="boot-msg">Starting...</div>
+    </div>
+
+    <!-- Login Screen -->
+    <div id="login-screen">
+        <div class="login-bg" id="login-bg"></div>
+        <div class="login-box">
+            <div class="login-time" id="login-time">00:00</div>
+            <div class="login-date" id="login-date"></div>
+            <div class="login-avatar">A</div>
+            <div class="login-user">admin</div>
+            <div class="login-error" id="login-error"></div>
+            <input type="password" id="login-pass" placeholder="Password">
+            <button id="login-btn">Sign In</button>
+            <div class="login-options">
+                <label><input type="checkbox" id="login-remember"> Remember me</label>
+            </div>
+            <div class="login-bottom-btns">
+                <button id="login-shutdown">Shutdown</button>
+                <button id="login-restart">Restart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop -->
+    <div id="desktop">
+        <div id="desktop-wallpaper"></div>
+        <div id="desktop-icons"></div>
+        <div id="windows-container"></div>
+        
+        <!-- Taskbar -->
+        <div id="taskbar">
+            <button id="start-btn">Start</button>
+            <input type="text" id="search-bar" placeholder="Search apps & files...">
+            <div id="taskbar-apps"></div>
+            <div id="system-tray">
+                <button id="theme-toggle-btn" title="Toggle Theme">Dark</button>
+                <div id="clock-btn">
+                    <span id="taskbar-time">00:00</span>
+                    <span id="taskbar-date"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Menu -->
+        <div id="start-menu">
+            <input type="text" id="start-search" placeholder="Search...">
+            <div id="start-pinned"></div>
+            <div id="start-recent-list"></div>
+            <div class="start-footer">
+                <button id="start-lock">Lock</button>
+                <button id="start-logout">Logout</button>
+                <button id="start-shutdown">Shutdown</button>
+            </div>
+        </div>
+
+        <!-- Calendar Popup -->
+        <div id="calendar-popup"></div>
+    </div>
+
+    <!-- Context Menu -->
+    <div id="context-menu"></div>
+
+    <!-- Notifications -->
+    <div id="notifications"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="controls">
+        <input type="date" id="date" value="2023-01-01">
+        <input type="text" id="title" placeholder="Event Title">
+        <select id="cat">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+        </select>
+        <button onclick="addEvent()">Add Event</button>
+        <div class="filters">
+            <button class="filter-btn active" onclick="setFilter('all',this)">All</button>
+            <button class="filter-btn" onclick="setFilter('work',this)">Work</button>
+            <button class="filter-btn" onclick="setFilter('personal',this)">Personal</button>
+        </div>
+        <button class="filter-btn" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="timeline" id="timeline"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

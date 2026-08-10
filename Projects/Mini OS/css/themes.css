@@ -1,0 +1,25 @@
+/* Default Dark Theme */
+:root {
+    --bg-primary: #1e1e2e;
+    --bg-glass: rgba(30, 30, 46, 0.85);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --accent: #00e5a0;
+    --hover-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+    --bg-primary: #f0f0f5;
+    --bg-glass: rgba(240, 240, 245, 0.9);
+    --border-color: rgba(0, 0, 0, 0.1);
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --hover-bg: rgba(0, 0, 0, 0.05);
+}
+
+body {
+    margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-primary); color: var(--text-primary); overflow: hidden; user-select: none;
+}

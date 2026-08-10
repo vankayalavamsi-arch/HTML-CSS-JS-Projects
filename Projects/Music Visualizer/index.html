@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="visualizer" width="800" height="400"></canvas>
+    <div class="controls">
+        <button id="startBtn" onclick="startMic()">Start Mic</button>
+        <input type="color" id="colorPicker" value="#e17055" onchange="document.documentElement.style.setProperty('--accent', this.value)">
+    </div>
+    <p class="msg">Make some noise or play music near your mic!</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

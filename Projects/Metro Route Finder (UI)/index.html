@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Route Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Metro Route Finder</h1>
+            <p>Find the shortest path between any two stations</p>
+        </header>
+
+        <div class="search-box">
+            <div class="input-group">
+                <label for="start-station">From Station:</label>
+                <select id="start-station">
+                    <option value="" disabled selected>Select Start Station</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="end-station">To Station:</label>
+                <select id="end-station">
+                    <option value="" disabled selected>Select Destination Station</option>
+                </select>
+            </div>
+
+            <button id="find-route-btn">Find Route</button>
+        </div>
+
+        <div id="result-container" class="result-container hidden">
+            <div class="summary">
+                <span id="time-display">Time: --</span>
+                <span id="interchange-display">Interchanges: --</span>
+            </div>
+            <div class="route-path">
+                <h3>Route:</h3>
+                <ul id="route-steps"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

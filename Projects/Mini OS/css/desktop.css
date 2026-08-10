@@ -1,0 +1,9 @@
+#desktop { position: fixed; inset: 0; display: none; overflow: hidden; }
+#desktop.active { display: block; }
+#desktop-wallpaper { position: absolute; inset: 0; background-size: cover; background-position: center; }
+#desktop-icons { position: absolute; top: 10px; left: 10px; bottom: 60px; width: 100px; display: flex; flex-direction: column; flex-wrap: wrap; gap: 5px; align-content: flex-start; z-index: 1; }
+.desktop-icon { width: 90px; padding: 8px 5px; text-align: center; border-radius: 5px; cursor: pointer; }
+.desktop-icon:hover { background: var(--hover-bg); }
+.desktop-icon.selected { background: rgba(0, 229, 160, 0.2); outline: 1px solid var(--accent); }
+.desktop-icon-img { font-size: 32px; display: block; margin-bottom: 5px; pointer-events: none; }
+.desktop-icon-name { font-size: 11px; display: block; word-wrap: break-word; pointer-events: none; text-shadow: 1px 1px 2px #000; }

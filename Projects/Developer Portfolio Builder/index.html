@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="editor">
+        <h2>Markdown Editor</h2>
+        <p style="font-size:12px;opacity:0.6;">Use: # H1, ## H2, - List Item, [Skill]</p>
+        <textarea id="md" oninput="parse()">
+# John Doe
+Full Stack Developer
+
+## About Me
+- I build scalable web apps.
+- Passionate about open source.
+
+## Skills
+[HTML] [CSS] [JavaScript] [React] [Node.js]
+
+## Projects
+- E-commerce Platform: Built a full stack store.
+- Chat App: Real-time messaging with websockets.
+
+## Contact
+- Email: john@mail.com
+- GitHub: @johndoe
+        </textarea>
+        <button onclick="window.print()">Export / Print PDF</button>
+        <button style="background:var(--border);color:var(--text)" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="preview" id="preview"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

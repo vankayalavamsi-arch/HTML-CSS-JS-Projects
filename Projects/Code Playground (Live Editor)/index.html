@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>Code Playground</h2>
+        <div style="display:flex;gap:10px;">
+            <button onclick="runCode()">Run Code</button>
+            <button style="background:#333" onclick="toggleDark()">🌙</button>
+        </div>
+    </div>
+    
+    <div class="workspace">
+        <div class="editors">
+            <div class="tabs">
+                <div class="tab active" onclick="switchTab('html',this)">HTML</div>
+                <div class="tab" onclick="switchTab('css',this)">CSS</div>
+                <div class="tab" onclick="switchTab('js',this)">JS</div>
+            </div>
+            <textarea id="html" oninput="runCode()"><div id="app"><h1>Hello World</h1><button onclick="alert('Hi')">Click Me</button></div></textarea>
+            <textarea id="css" style="display:none" oninput="runCode()">body { display:flex; justify-content:center; align-items:center; height:100vh; background:#f0f0f0; font-family:sans-serif; } button { padding:10px 20px; font-size:20px; background:#0984e3; color:#fff; border:none; border-radius:5px; cursor:pointer; }</textarea>
+            <textarea id="js" style="display:none" oninput="runCode()">console.log("Editor Ready");</textarea>
+        </div>
+        <iframe id="preview"></iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

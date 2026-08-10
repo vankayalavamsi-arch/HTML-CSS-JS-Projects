@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Expense Tracker</h2>
+            <button style="background:var(--card);color:var(--text);width:auto" onclick="toggleDark()">🌙</button>
+        </div>
+        
+        <div class="summary">
+            <div class="box">
+                <h3>Balance</h3>
+                <p id="balance">$0</p>
+            </div>
+            <div class="box">
+                <h3>Income</h3>
+                <p id="income" class="inc">$0</p>
+            </div>
+            <div class="box">
+                <h3>Expenses</h3>
+                <p id="expenses" class="exp">$0</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="pie" id="pie"></div>
+        </div>
+
+        <div class="form">
+            <input type="text" id="desc" placeholder="Description">
+            <input type="number" id="amount" placeholder="Amount">
+            <select id="type">
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+            </select>
+            <div class="btn-row">
+                <button class="inc-btn" onclick="addTx('income')">+ Income</button>
+                <button class="exp-btn" onclick="addTx('expense')">- Expense</button>
+            </div>
+        </div>
+
+        <div class="list" id="list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

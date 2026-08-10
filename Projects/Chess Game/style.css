@@ -1,0 +1,105 @@
+:root {
+    --light: #f0d9b5;
+    --dark: #b58863;
+    --sel: rgba(20, 85, 30, 0.5);
+    --move: rgba(20, 85, 30, 0.3);
+}
+
+.dark {
+    --light: #a8a29e;
+    --dark: #57534e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #312e2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.game {
+    display: flex;
+    gap: 30px;
+    background: #1a1917;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: 480px;
+    height: 480px;
+    border: 5px solid #000;
+}
+
+.sq {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.sq.l {
+    background: var(--light);
+}
+
+.sq.d {
+    background: var(--dark);
+}
+
+.sq.selected {
+    background: var(--sel) !important;
+}
+
+.sq.move {
+    background: var(--move) !important;
+}
+
+.info {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #ccc;
+}
+
+#turn {
+    color: #f1c40f;
+    font-weight: bold;
+}
+
+.history {
+    background: #2c2a27;
+    padding: 10px;
+    border-radius: 5px;
+    height: 300px;
+    overflow-y: auto;
+    font-size: 14px;
+    white-space: pre-wrap;
+}
+
+.captured {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 24px;
+}

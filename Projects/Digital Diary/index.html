@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <h2>My Diary</h2>
+            <button onclick="newEntry()">+ New</button>
+        </div>
+        <div id="list"></div>
+    </div>
+    
+    <div class="editor">
+        <input type="date" id="date">
+        <div class="moods" id="moods">
+            <div class="mood" data-m="happy" onclick="setMood('happy')">😊</div>
+            <div class="mood" data-m="sad" onclick="setMood('sad')">😢</div>
+            <div class="mood" data-m="angry" onclick="setMood('angry')">🤬</div>
+            <div class="mood" data-m="love" onclick="setMood('love')">🥰</div>
+        </div>
+        <textarea id="text" placeholder="Dear Diary..."></textarea>
+        <button style="width:100%;padding:15px;background:var(--mood-happy);color:#fff" onclick="saveEntry()">Save Entry</button>
+        <button style="width:100%;margin-top:10px;background:#d63031" onclick="deleteEntry()">Delete Entry</button>
+        <button style="width:100%;margin-top:10px;background:var(--border);color:var(--text)" onclick="toggleDark()">🌙</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Side: Form -->
+        <div class="form-section">
+            <h2>Generate Certificate</h2>
+            
+            <div class="input-group">
+                <label>Recipient Name</label>
+                <input type="text" id="nameInput" placeholder="e.g. John Doe">
+            </div>
+
+            <div class="input-group">
+                <label>Certificate Title</label>
+                <input type="text" id="titleInput" placeholder="e.g. Certificate of Achievement" value="Certificate of Achievement">
+            </div>
+
+            <div class="input-group">
+                <label>Description</label>
+                <textarea id="descInput" placeholder="e.g. For outstanding performance in the Web Development Bootcamp" rows="3"></textarea>
+            </div>
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label>Date</label>
+                    <input type="date" id="dateInput">
+                </div>
+                <div class="input-group">
+                    <label>Signature</label>
+                    <input type="text" id="signInput" placeholder="e.g. Jane Smith" value="Jane Smith">
+                </div>
+            </div>
+
+            <button onclick="generateCertificate()">Generate Certificate</button>
+        </div>
+
+        <!-- Right Side: Preview -->
+        <div class="preview-section">
+            <div id="certificate">
+                <div class="cert-border">
+                    <div class="cert-inner">
+                        <div class="ornament top-left"></div>
+                        <div class="ornament top-right"></div>
+                        <div class="ornament bottom-left"></div>
+                        <div class="ornament bottom-right"></div>
+                        
+                        <div class="cert-content">
+                            <p class="cert-title" id="certTitle">Certificate of Achievement</p>
+                            <p class="cert-subtitle">This is to certify that</p>
+                            <p class="cert-name" id="certName">Your Name Here</p>
+                            <p class="cert-desc" id="certDesc">Has successfully completed the requirements for</p>
+                            <div class="cert-bottom">
+                                <div class="sign-box">
+                                    <div class="sign-line"></div>
+                                    <p id="certSign">Jane Smith</p>
+                                </div>
+                                <div class="date-box">
+                                    <div class="date-line"></div>
+                                    <p id="certDate">January 1, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="download-btn" onclick="downloadCertificate()">Download as Image</button>
+        </div>
+    </div>
+
+    <!-- Hidden canvas for downloading -->
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

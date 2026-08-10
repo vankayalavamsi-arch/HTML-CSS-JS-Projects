@@ -1,0 +1,134 @@
+:root {
+    --bg: #ffeaa7;
+    --card: #fff;
+    --text: #2d3436;
+    --border: #ddd;
+    --accent: #fdcb6e;
+    --mood-happy: #00b894;
+    --mood-sad: #0984e3;
+    --mood-angry: #d63031;
+}
+
+.dark {
+    --bg: #2d3436;
+    --card: #444;
+    --text: #ffeaa7;
+    --border: #555;
+    --accent: #636e72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.sidebar {
+    width: 300px;
+    background: var(--card);
+    border-right: 2px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.editor {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    background: var(--card);
+    margin: 20px;
+    margin-left: 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 2px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    background: var(--accent);
+    color: #000;
+}
+
+.entry {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.entry:hover {
+    background: var(--bg);
+}
+
+.entry.active {
+    background: var(--accent);
+    color: #000;
+}
+
+.entry h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.entry p {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    height: 300px;
+    resize: none;
+}
+
+.moods {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mood {
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.mood.active {
+    opacity: 1;
+    transform: scale(1.2);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <input type="text" id="username" placeholder="GitHub Username..." value="octocat" onkeypress="if(event.key==='Enter')getUser()">
+        <button onclick="getUser()">Search</button>
+        <button style="background:var(--card);color:var(--text)" onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="error" id="error">User not found!</div>
+    
+    <div id="ui">
+        <div class="profile" id="profile"></div>
+        <div class="repos" id="repos"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

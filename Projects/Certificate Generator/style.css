@@ -1,0 +1,246 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Form Section */
+.form-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+}
+
+.input-group input, 
+.input-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: #3498db;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-row .input-group {
+    flex: 1;
+}
+
+.form-section button {
+    margin-top: 10px;
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-section button:hover {
+    background: #2980b9;
+}
+
+/* Preview Section */
+.preview-section {
+    flex: 1.5;
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Certificate Styles */
+#certificate {
+    width: 100%;
+    aspect-ratio: 1.414; /* A4 ratio */
+    background: #fffef5;
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.cert-border {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #2c3e50;
+    position: relative;
+}
+
+.cert-inner {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2c3e50;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Corner Ornaments */
+.ornament {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 4px double #c0392b;
+}
+
+.top-left { top: 20px; left: 20px; border-right: none; border-bottom: none; }
+.top-right { top: 20px; right: 20px; border-left: none; border-bottom: none; }
+.bottom-left { bottom: 20px; left: 20px; border-right: none; border-top: none; }
+.bottom-right { bottom: 20px; right: 20px; border-left: none; border-top: none; }
+
+/* Certificate Content */
+.cert-content {
+    text-align: center;
+    width: 100%;
+}
+
+.cert-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.cert-subtitle {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.cert-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #c0392b;
+    margin: 10px 0 20px 0;
+    font-family: 'Great Vibes', cursive, Georgia, serif;
+    /* Fallback elegant styling if font fails */
+    font-style: italic;
+}
+
+.cert-desc {
+    font-size: 16px;
+    color: #555;
+    max-width: 80%;
+    margin: 0 auto 60px auto;
+    line-height: 1.5;
+}
+
+.cert-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sign-box, .date-box {
+    text-align: center;
+    width: 200px;
+}
+
+.sign-line, .date-line {
+    width: 100%;
+    height: 2px;
+    background: #333;
+    margin-bottom: 5px;
+}
+
+.sign-box p, .date-box p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Download Button */
+.download-btn {
+    padding: 12px 30px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.download-btn:hover {
+    background: #2ecc71;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-section {
+        max-width: 100%;
+        width: 100%;
+    }
+    .preview-section {
+        min-width: 100%;
+    }
+}

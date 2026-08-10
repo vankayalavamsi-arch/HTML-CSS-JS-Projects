@@ -1,0 +1,50 @@
+:root {
+    --sky: #74b9ff;
+    --ground: #dfe6e9;
+    --pipe: #00b894;
+}
+
+.night {
+    --sky: #2d3436;
+    --ground: #636e72;
+    --pipe: #00cec9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2d3436;
+    overflow: hidden;
+}
+
+canvas {
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.ui {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    backdrop-filter: blur(5px);
+}

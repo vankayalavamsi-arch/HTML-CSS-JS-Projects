@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="shop">
+        <div class="header">
+            <h1>TechStore</h1>
+            <button class="filter-btn" onclick="toggleDark()">🌙</button>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" onclick="filter('all',this)">All</button>
+            <button class="filter-btn" onclick="filter('laptop',this)">Laptops</button>
+            <button class="filter-btn" onclick="filter('phone',this)">Phones</button>
+            <button class="filter-btn" onclick="filter('audio',this)">Audio</button>
+        </div>
+        <div class="grid" id="grid"></div>
+    </div>
+    
+    <div class="cart">
+        <h2>🛒 Cart (<span id="count">0</span>)</h2>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="checkout">
+            <div class="total">Total: $<span id="total">0</span></div>
+            <button class="check-btn" onclick="alert('Checkout Success!')">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

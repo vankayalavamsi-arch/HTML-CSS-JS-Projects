@@ -1,0 +1,132 @@
+:root {
+    --bg: #f5f6fa;
+    --card: #fff;
+    --text: #2d3436;
+    --green: #00b894;
+    --red: #d63031;
+    --border: #eee;
+}
+
+.dark {
+    --bg: #181818;
+    --card: #252525;
+    --text: #fff;
+    --green: #55efc4;
+    --red: #ff7675;
+    --border: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background: var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin-bottom: 5px;
+}
+
+.info h2 {
+    font-size: 24px;
+}
+
+.change {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.up {
+    background: rgba(0, 184, 148, 0.1);
+    color: var(--green);
+}
+
+.down {
+    background: rgba(214, 48, 49, 0.1);
+    color: var(--red);
+}
+
+.heart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sparkline {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.bar {
+    flex: 1;
+    border-radius: 2px;
+    opacity: 0.5;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+    font-weight: bold;
+}

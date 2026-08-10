@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>My Habits</h2>
+            <button style="background:var(--card);color:var(--text)" onclick="toggleDark()">🌙</button>
+        </div>
+        <div class="add-form">
+            <input type="text" id="habitInput" placeholder="New Habit (e.g. Read)">
+            <button onclick="addHabit()">Add</button>
+        </div>
+        <div id="habits"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

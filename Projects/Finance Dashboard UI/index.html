@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Dashboard</h1>
+        <button onclick="toggleDark()">🌙</button>
+    </div>
+    
+    <div class="cards">
+        <div class="card">
+            <h4>Total Balance</h4>
+            <h2 id="c1">$0</h2>
+        </div>
+        <div class="card">
+            <h4>Monthly Income</h4>
+            <h2 id="c2">$0</h2>
+        </div>
+        <div class="card">
+            <h4>Monthly Expenses</h4>
+            <h2 id="c3">$0</h2>
+        </div>
+        <div class="card">
+            <h4>Savings Goal</h4>
+            <h2>68%</h2>
+            <div class="progress-container">
+                <div class="progress-bg">
+                    <div class="progress-fill" id="goal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

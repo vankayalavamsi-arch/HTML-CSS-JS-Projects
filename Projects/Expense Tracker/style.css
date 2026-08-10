@@ -1,0 +1,158 @@
+:root {
+    --bg: #f5f6fa;
+    --card: #fff;
+    --text: #2d3436;
+    --green: #00b894;
+    --red: #d63031;
+    --border: #dcdde1;
+    --accent: #0984e3;
+}
+
+.dark {
+    --bg: #181818;
+    --card: #252525;
+    --text: #fff;
+    --green: #55efc4;
+    --red: #ff7675;
+    --border: #333;
+    --accent: #74b9ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: var(--card);
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.box h3 {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form {
+    background: var(--card);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.btn-row {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    flex: 1;
+}
+
+.inc-btn {
+    background: var(--green);
+}
+
+.exp-btn {
+    background: var(--red);
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pie {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(var(--green) 0% 60%, var(--red) 60% 100%);
+}
+
+.list {
+    background: var(--card);
+    border-radius: 15px;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--border);
+}
+
+.item span:first-child {
+    font-weight: bold;
+}
+
+.item span:last-child {
+    font-weight: bold;
+}
+
+.inc {
+    color: var(--green);
+}
+
+.exp {
+    color: var(--red);
+}

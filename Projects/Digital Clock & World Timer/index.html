@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <div id="time">00:00:00</div>
+        <div id="date">Loading date...</div>
+        <div class="controls">
+            <select id="timezone" onchange="updateClock()">
+                <option value="local">Local Time</option>
+                <option value="America/New_York">New York (EST)</option>
+                <option value="Europe/London">London (GMT)</option>
+                <option value="Asia/Tokyo">Tokyo (JST)</option>
+                <option value="Asia/Dubai">Dubai (GST)</option>
+            </select>
+            <button onclick="toggleFormat()">12H / 24H</button>
+            <button onclick="toggleDark()">🌙</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
